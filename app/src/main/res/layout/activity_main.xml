@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:padding="16dp"
+    android:textSize="40dp"
+    android:fontFamily="Arial"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:fitsSystemWindows="true">
+
+    <EditText
+        android:id="@+id/textToTranslate"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textLongMessage"
+        android:hint="Enter text to translate..."
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/lang_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Select a language"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"
+        android:entries="@array/country_arrays"
+        android:padding="16dp"
+        android:prompt="@string/language_prompt"
+        android:textSize="16dp"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="40dp"
+        android:text="Translate" />
+
+    <EditText
+        android:id="@+id/translatedText"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textLongMessage"
+        android:hint="Translated Text Here"
+        android:layout_margin="20dp"/>
+</LinearLayout>
